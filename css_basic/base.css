@@ -5,7 +5,9 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
 
 /* CSS reset rules */
-
+:root {
+  --titlecolor: #d4af37;
+}
 html,
 body {
   height: 100%;
@@ -131,7 +133,7 @@ table {
 
 body {
   font-family: "Josefin Sans", serif;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 h1,
 h2,
@@ -149,10 +151,11 @@ header {
   transition: border-bottom-color 1s ease;
 }
 header a {
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 aside {
   background: #fafafa;
+  height: fit-content;
 }
 aside p {
   border: 1px solid #bbb;
@@ -163,7 +166,7 @@ footer a {
   color: rgba(0, 0, 0, 0.8);
 }
 a {
-  color: #f80002;
+  color: whitesmoke;
 }
 
 /* Positioning and margins */
@@ -272,4 +275,8 @@ h6 {
   header .right {
     float: none;
   }
+}
+.title {
+  background-color: var(--titlecolor);
+  border-radius: 5%;
 }
