@@ -1,0 +1,32 @@
+
+/*1280 x 720*/
+:root {
+  --titlecolor: #d4af37;
+}
+* {
+  background-image: url("../css_basic/download (1).jpg");
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+/*title*/
+.title {
+  background-color: var(--titlecolor);
+  border-radius: 5%;
+}
